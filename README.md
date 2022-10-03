@@ -108,6 +108,6 @@ http://localhost:9000/swagger-ui/index.html
 
 ###### /books
 
-![alt text][img6]
+![alt text][img7]
 
 [img7]: ./images/book-get-sq.PNG "Sequence for /books"
