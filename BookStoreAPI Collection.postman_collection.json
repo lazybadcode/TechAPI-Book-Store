@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "37572c84-512f-40d5-962e-82fac245020f",
+		"name": "BookStoreAPI Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2117037"
+	},
+	"item": [
+		{
+			"name": "users/register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3aW5uZXkxMjM0NTYiLCJpc3MiOiJCYWNrZW5kU2VydmljZSIsImF1ZCI6InRlY2gtcGVvcGxlIiwicm9sZSI6WyJhZG1pbiJdLCJleHAiOjE2NjQ2NTI3MTl9.Nhgl0s2IrlNAmwjhdAyRYqHZWZmwSae8HD6PV8cppnw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"winney123456\",\r\n    \"password\": \"12345678\",\r\n    \"date_of_birth\": \"15/01/1985\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/users/create",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"winney123456\",\r\n    \"password\" : \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users/order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3aW5uZXkxMjM0NTYiLCJpc3MiOiJCYWNrZW5kU2VydmljZSIsImF1ZCI6InRlY2gtcGVvcGxlIiwicm9sZSI6WyJhZG1pbiJdLCJleHAiOjE2NjQ2NTA1OTh9.vXF5a62PnZqnp_9kGoC0nMc5HY7lg9rVMVGUqOCxU_M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\"orders\": [1, 4]}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/users/orders",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://scb-test-book-publisher.herokuapp.com/books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://scb-test-book-publisher.herokuapp.com/books",
+					"protocol": "https",
+					"host": [
+						"scb-test-book-publisher",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://scb-test-book-publisher.herokuapp.com/books/recommendation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://scb-test-book-publisher.herokuapp.com/books/recommendation",
+					"protocol": "https",
+					"host": [
+						"scb-test-book-publisher",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"books",
+						"recommendation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users/create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3aW5uZXkxMjM0NTYiLCJpc3MiOiJCYWNrZW5kU2VydmljZSIsImF1ZCI6InRlY2gtcGVvcGxlIiwicm9sZSI6WyJhZG1pbiJdLCJleHAiOjE2NjQ2NTI4ODB9.-NrwH7ZrajFFLgHifIhWUnYxc_TGeEkro_30EgJJY8A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"winney1234568\",\r\n    \"password\": \"12345678\",\r\n    \"date_of_birth\": \"15/01/1985\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/users/create",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users/delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3aW5uZXkxMjM0NTYiLCJpc3MiOiJCYWNrZW5kU2VydmljZSIsImF1ZCI6InRlY2gtcGVvcGxlIiwicm9sZSI6WyJhZG1pbiJdLCJleHAiOjE2NjQ2NTQ1Nzh9.vyBQ7AXirBReYahqkcp3pPFAhj_TiGFbKOK16SWoaRU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/users/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "load/get/books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/books",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users/getUserOrder",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3aW5uZXkxMjM0NTY4IiwiaXNzIjoiQmFja2VuZFNlcnZpY2UiLCJhdWQiOiJ0ZWNoLXBlb3BsZSIsInJvbGUiOlsiYWRtaW4iXSwiZXhwIjoxNjY0NzQyMzA4fQ.QFy2fBtllo2R4r_NsZ-ogJFf0qs_BnW_yHph7ddKU1I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/users/getUserOrder",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users",
+						"getUserOrder"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

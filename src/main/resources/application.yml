@@ -1,0 +1,51 @@
+server:
+  port: 9000
+
+
+app:
+  token:
+    issuer: BackendService
+    audience: tech-people
+
+springdoc:
+  api-docs.path: /techx-openapi
+---
+spring:
+  profiles:
+    active: dev
+    
+---
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:postgresql://localhost:5432/techAPI
+    username: postgres
+    password: tech1234!
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+    hibernate.ddl-auto: update
+
+---
+spring:
+  profiles: test
+  datasource:
+    url: jdbc:h2:mem:iblurblur
+    username: sa
+    password: Tel1234!
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+    hibernate.ddl-auto: create-drop
+  h2:
+    console:
+      enabled: true
+
+  
+
+    
+      
