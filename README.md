@@ -20,8 +20,8 @@ BookStore uses Postgres and consists of database named “techAPI” which have 
     <ul>
         <li> /users/create
         <li> /users/orders
-        <li> /users/getUserOrder
-        <li> /users/delete
+        <li> /users/getUserOrder (It is require to create user first)
+        <li> /users/delete (Delete logged in user’s record and order history)
     </ul>
 <li>(Not Login required) for apis below
     <ul>
